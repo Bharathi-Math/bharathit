@@ -1,19 +1,20 @@
-nav {
+/* Style the navigation bar */
+.navbar {
   display: flex;
   gap: 10px;
-  margin: 20px 0;
+  margin: 10px 0;
 }
-.button {
-  display: inline-block;
+
+.navbar a {
   padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
   color: white;
-  background-color: #007acc;
+  background-color: #007acc; /* Blue background */
   text-decoration: none;
   border-radius: 5px;
-  text-align: center;
+  font-weight: bold;
+  display: inline-block;
 }
-.button:hover {
-  background-color: #005f99;
+
+.navbar a:hover {
+  background-color: #005f99; /* Darker blue on hover */
 }
