@@ -1,0 +1,4 @@
+theme: jekyll-theme-cayman
+title: "Your Academic Page"
+description: "A brief description"
+custom_css: style.css
