@@ -1,4 +1,7 @@
 theme: jekyll-theme-cayman
 title: "Your Academic Page"
-description: "A brief description"
-custom_css: style.css
+description: "A brief description of your work"
+include:
+  - _layouts
+  - assets
+custom_css: assets/style.css
