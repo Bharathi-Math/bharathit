@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ 'assets/style.css' | relative_url }}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  {{ content_for_head }}
 </head>
 <body>
-    <header>
-        <h1><a href="{{ '/' | relative_url }}">My Academic Page</a></h1>
-        <nav>
-            <div style="display: flex; gap: 10px;">
-                <a href="{{ 'teaching' | relative_url }}" class="button">Teaching</a>
-                <a href="{{ 'research' | relative_url }}" class="button">Research</a>
-                <a href="{{ 'contact' | relative_url }}" class="button">Contact</a>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        {{ content }}
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Bharathi Thiruvengadam</p>
-    </footer>
+  <header>
+    <div class="container">
+      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+      <nav>
+        <a href="{{ '/' | relative_url }}" class="button">Home</a>
+        <a href="{{ '/teaching' | relative_url }}" class="button">Teaching</a>
+        <a href="{{ '/research' | relative_url }}" class="button">Research</a>
+        <a href="{{ '/contact' | relative_url }}" class="button">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      {{ content }}
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+    </div>
+  </footer>
 </body>
 </html>
