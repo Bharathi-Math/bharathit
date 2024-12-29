@@ -8,17 +8,7 @@
   {{ content_for_head }}
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-      <nav>
-        <a href="{{ '/' | relative_url }}" class="button">Home</a>
-        <a href="{{ '/teaching' | relative_url }}" class="button">Teaching</a>
-        <a href="{{ '/research' | relative_url }}" class="button">Research</a>
-        <a href="{{ '/contact' | relative_url }}" class="button">Contact</a>
-      </nav>
-    </div>
-  </header>
+  {% include header.html %}
   <main>
     <div class="container">
       {{ content }}
