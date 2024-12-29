@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ 'assets/style.css' | relative_url }}">
+</head>
+<body>
+    <header>
+        <h1><a href="{{ '/' | relative_url }}">My Academic Page</a></h1>
+        <nav>
+            <div style="display: flex; gap: 10px;">
+                <a href="{{ 'teaching' | relative_url }}" class="button">Teaching</a>
+                <a href="{{ 'research' | relative_url }}" class="button">Research</a>
+                <a href="{{ 'contact' | relative_url }}" class="button">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        {{ content }}
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Name</p>
+    </footer>
+</body>
+</html>
