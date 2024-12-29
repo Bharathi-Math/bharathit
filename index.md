@@ -10,7 +10,7 @@ I am **[Your Name]**, a researcher in **[Your Field]**. This is a brief descript
 ## Quick Links
 
 <div style="display: flex; gap: 10px;">
-    <a href="/teaching" class="button">Teaching</a>
-    <a href="/research" class="button">Research</a>
-    <a href="/contact" class="button">Contact</a>
+    <a href="teaching" class="button">Teaching</a>
+    <a href="research" class="button">Research</a>
+    <a href="contact" class="button">Contact</a>
 </div>
