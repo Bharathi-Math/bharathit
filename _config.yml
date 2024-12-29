@@ -1,8 +1,17 @@
 theme: jekyll-theme-cayman
 title: "Your Academic Page"
 description: "A brief description of your work"
-include:
-  - _includes
-  - _layouts
-  - assets
+
+# Enable links in the header navigation
+header_links:
+  - title: "Home"
+    url: "/"
+  - title: "Teaching"
+    url: "/teaching"
+  - title: "Research"
+    url: "/research"
+  - title: "Contact"
+    url: "/contact"
+
+# Add a custom stylesheet
 custom_css: assets/style.css
